@@ -11,11 +11,10 @@ public class Day9Pt1 {
         int[] head = { 0, 0 };
         int[] tail = { 0, 0 };
         tailPlaces.add(tail[0] + " " + tail[1]);
-
         while (input.hasNextLine()) {
             String instruction = input.nextLine();
             String direction = instruction.split(" ")[0];
-            
+
             int unitsMoved = Integer.parseInt(instruction.split(" ")[1]);
             for (int i = 0; i < unitsMoved; i++) {
                 moveHead(head, direction);
